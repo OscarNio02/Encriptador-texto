@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio Challenge</title>
+        <link rel="stylesheet" href="Style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="img/Logo.png" alt="Logo de Alura">
+        </header>
+        <main>
+            <section>
+                <textarea class="text-area" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+                <div>
+                    <h6 class= "informacion">Solo letras minúsculas y sin acentos.</h6>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section>
+                <textarea class="mensaje" cols="20" rows="10"></textarea>
+                <div class="cuadroRespuesta">
+                    <h2 class="texto1">Ningún mensaje fue encontrado</h2>
+                    <h3 class="texto2">Ingresa el texto que desees encriptar o desencriptar.</h3>
+                    <button class="copiar" onclick="copiar()" style="display: none;"><span class="anuncio"></span>Copiar</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h2 class="autor">Oscar Niño</h2>
+        </footer>
+
+    </body>
+
+    <script src="script.js"></script>
+
+</html>
